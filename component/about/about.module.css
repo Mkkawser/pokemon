@@ -1,0 +1,85 @@
+.about {
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+  gap: 14px;
+  justify-items: center;
+}
+
+.side {
+  animation: ran 20s cubic-bezier(0.43, 0.43, 0.42, 0.45) infinite;
+  background-image: url("../../public/Img/Left.png");
+  height: 840px;
+  width: 60px;
+  background-repeat: no-repeat;
+}
+.right {
+  animation-duration: 20s;
+}
+
+@keyframes ran {
+  0% {
+    background-position-y: 0;
+  }
+  100% {
+    background-position-y: -360px;
+  }
+}
+
+.about-head {
+  position: relative;
+}
+.center {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.about-head-text {
+  position: absolute;
+  top: 0;
+  font-family: Ubuntu;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 55px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #257bc4;
+}
+.about-text-area {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 15px;
+  text-align: justify;
+}
+.about-text-area p {
+  font-size: 13px;
+}
+
+.text-left {
+  display: grid;
+  grid-template-columns: 1fr 180px;
+  grid-auto-columns: 1fr;
+  gap: 15px;
+}
+.text-left-sideA1 {
+  display: grid;
+  grid-template-columns: 1fr 180px;
+  padding-top: 4px;
+  gap: 15px;
+}
+ 
+.text7 {
+  padding-top: 15px !important ;
+}
+
+.text7,
+.text5,
+.text6 {
+  width: 300px;
+}
+
+.text-right-page {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 15px;
+  text-align: justify;
+}

@@ -1,0 +1,30 @@
+.card_Wrap {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 30px;
+  @apply gap-4 box-border;
+}
+.card {
+  clip-path: polygon(
+    30% 0%,
+    100% 0%,
+    100% 30%,
+    100% 82.32%,
+    91.16% 91.16%,
+    82.32% 100%,
+    30% 100%,
+    0% 100%,
+    0% 0%
+  );
+  @apply border  bg-[#8e8989];
+}
+
+.card_Img img {
+  width: -webkit-fill-available;
+}
+.card_Img img:hover {
+  @apply scale-110;
+}
+.card_name {
+  @apply capitalize text-[#221b23] w-fit p-1 bg-[#84d117];
+}

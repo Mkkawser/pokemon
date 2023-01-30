@@ -1,0 +1,51 @@
+.bg {
+  @apply p-4;
+}
+.bg img {
+  @apply mx-auto;
+}
+
+.full {
+  display: grid;
+  grid-template-columns: 1.2fr 1.5fr 1fr;
+  gap: 15px;
+}
+.left {
+  @apply p-4;
+}
+.left .name {
+  @apply uppercase text-[25px];
+}
+.left .des {
+  padding-bottom: 25px;
+  @apply text-justify text-[18px];
+}
+.frame {
+  width: 300px;
+  height: 200px;
+  border: 2px solid salmon;
+  border-bottom-right-radius: 80px 80px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.left .title {
+  @apply capitalize font-semibold;
+}
+.type {
+  @apply pb-6;
+}
+ 
+.typeT {
+  @apply font-semibold;
+}
+.typeVal {
+  @apply bg-[#9cb0c4] w-fit p-2 pt-[1px] pr-2;
+}
+
+.statsN {
+  @apply capitalize;
+}
+.homeP{
+  @apply border w-fit bg-[#ab2] p-1 rounded-md absolute left-[45%];
+}
