@@ -110,14 +110,18 @@ export default function Datils() {
           <div className={style.type}>
             <p className={style.typeT}>Type</p>
             {types.map((val, i) => (
-              <span className={style.typeVal}>{val.type.name}</span>
+              <span key={i} className={style.typeVal}>
+                {val.type.name}
+              </span>
             ))}
           </div>
           <div className={style.stats}>
             <p className={style.typeT}>Stats</p>
             {stats.map((val, i) => (
               <>
-                <small className={style.statsN}>{val.stat.name}</small>
+                <small key={i} className={style.statsN}>
+                  {val.stat.name}
+                </small>
                 <p>{val.base_stat}</p>
               </>
             ))}
